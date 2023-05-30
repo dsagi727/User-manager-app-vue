@@ -7,17 +7,13 @@ export async function getUsers() {
   return response.data
 }
 
-export async function getUser(id) {
-  const response = await apiClient.get(urlFragment, id)
-  return response.data
-}
-
 export async function deleteUser(id) {
-  const response = await apiClient.delete(urlFragment, id)
+  await apiClient.delete(`${urlFragment}/${id}`)
+}
+
+export async function updateUser(id, updatedUser) {
+  const response = await apiClient.put(`${urlFragment}/${id}`, updatedUser)
   return response.data
 }
 
-export async function updateUser(id) {
-  const response = await apiClient.put(urlFragment, id)
-  return response.data
-}
+export default { getUsers, deleteUser, updateUser }

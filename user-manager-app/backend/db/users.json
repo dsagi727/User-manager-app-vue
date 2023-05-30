@@ -1,18 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "firstName": "Wilek",
-      "lastName": "Jouannin",
-      "email": "wjouannin0@senate.gov"
-    },
-    {
-      "id": 2,
-      "firstName": "Gabriellia",
-      "lastName": "Frankcombe",
-      "email": "gfrankcombe1@yahoo.co.jp"
-    },
-    {
       "id": 3,
       "firstName": "Carlyn",
       "lastName": "De la croix",
