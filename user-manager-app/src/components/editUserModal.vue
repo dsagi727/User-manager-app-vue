@@ -55,6 +55,7 @@ async function handleSaveButtonClick() {
                 v-model="userFormData.email"
                 type="text"
                 class="form-control"
+                required
               />
             </div>
             <div class="mb-3">
@@ -63,6 +64,7 @@ async function handleSaveButtonClick() {
                 v-model="userFormData.firstName"
                 type="text"
                 class="form-control"
+                required
               />
             </div>
             <div class="mb-3">
@@ -71,6 +73,7 @@ async function handleSaveButtonClick() {
                 v-model="userFormData.lastName"
                 type="text"
                 class="form-control"
+                required
               />
             </div>
           </form>

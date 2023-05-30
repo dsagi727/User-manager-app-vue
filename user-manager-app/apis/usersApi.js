@@ -16,4 +16,9 @@ export async function updateUser(id, updatedUser) {
   return response.data
 }
 
-export default { getUsers, deleteUser, updateUser }
+export async function createUser(user) {
+  const response = await apiClient.post(`${urlFragment}`, user)
+  return response.data
+}
+
+export default { getUsers, deleteUser, updateUser, createUser }
